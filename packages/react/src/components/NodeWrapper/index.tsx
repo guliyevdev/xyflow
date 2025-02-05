@@ -55,6 +55,7 @@ export function NodeWrapper<NodeType extends Node>({
   let nodeType = node.type || 'default';
   let NodeComponent = nodeTypes?.[nodeType] || builtinNodeTypes[nodeType];
 
+  
   if (NodeComponent === undefined) {
     onError?.('003', errorMessages['error003'](nodeType));
     nodeType = 'default';
@@ -195,6 +196,7 @@ export function NodeWrapper<NodeType extends Node>({
       aria-describedby={disableKeyboardA11y ? undefined : `${ARIA_NODE_DESC_KEY}-${rfId}`}
       aria-label={node.ariaLabel}
     >
+      
       <Provider value={id}>
         <NodeComponent
           id={id}

@@ -294,7 +294,7 @@ function ReactFlow<NodeType extends Node = Node, EdgeType extends Edge = Edge>(
         />
         <SelectionListener onSelectionChange={onSelectionChange} />
         {children}
-        <Attribution proOptions={proOptions} position={attributionPosition} />
+        {/* <Attribution proOptions={proOptions} position={attributionPosition} /> */}
         <A11yDescriptions rfId={rfId} disableKeyboardA11y={disableKeyboardA11y} />
       </Wrapper>
     </div>

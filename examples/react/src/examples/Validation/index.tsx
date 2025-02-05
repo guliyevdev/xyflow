@@ -43,7 +43,7 @@ const CustomNode: FC<NodeProps> = ({ id }) => (
   <>
     <Handle type="target" position={Position.Top} isConnectableStart={false} />
     <div>{id}</div>
-    <Handle type="source" position={Position.Right} />
+    <Handle type="source" position={Position.Bottom} />
   </>
 );
 
